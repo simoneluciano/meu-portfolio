@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-theme="light">
+  <header>
+    <nav class="navbar-expand-md navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="imagem/banner-2.png" alt="Logo meu nome" class="minha-imagem"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item ">
+              <a class="nav-link active fw-bold" aria-current="page" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link fw-bold" href="#Sobre-Mim">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#Projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                  <label class="form-check-label fw-bold" for="modo-noturno">Modo Noturno </label>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="banners-1 baner d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary  py-5">
+        <div class="texto-sobre-imagem">
+          <h2>"Desenvolver é dar forma ao invisível — transformar ideias soltas em soluções que fazem a diferença."</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section id="Sobre-Mim" class="container my-5">
+    <h2 class="text-center">Sobre Mim</h2>
+    <div class="row">
+      <p>Olá, meu nome é Simone, estou cursando o 4º período do curso de Análise e Desenvolvimento de Sistemas na
+        Estácio.</p>
+      <p>Estou desenvolvendo minhas habilidades em desenvolvimento web, com conhecimentos em HTML, CSS e JavaScript,
+        React e SQL, para criar páginas responsivas e interativas. Tenho experiência com APIs, integrando dados e
+        funcionalidades externas aos meus projetos, e com Local Storage para armazenar dados no navegador de forma
+        eficiente.</p>
+    </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="carrossel-container">
+      <div class="carrossel">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>APIs</span>
+        <span>SQL</span>
+        <span>Git</span>
+        <span>React</span>
+        <!-- repete  -->
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>APIs</span>
+        <span>SQL</span>
+        <span>Git</span>
+        <span>React</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="Projetos" class="py-5">
+
+    <h2 class="text-center   pb-1">Meus Projetos</h2>
+
+    <div class="container d-flex justify-content-around flex-wrap">
+
+      <!-- Card 1 -->
+      <div class="card m-4" style="width: 20rem;">
+
+        <img src="imagem/jogo-da-velha.png" class="card-img-top" alt="Jogo da Velha">
+        <div class="card-body">
+          <h5 class="card-title">Jogo da Velha</h5>
+          <p class="card-text">Jogo interativo com HTML, CSS e JavaScript. Interface intuitiva e responsiva, ideal para praticar lógica de programação.</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="https://simoneluciano.github.io/jogo-da-velha/" target="_blank" button type="button"
+            class="btn btn-outline-success"></button>
+            <i class="bi bi-box-arrow-up-right"></i> Ver Projeto
+          </a>
+          <a href="https://github.com/simoneluciano/jogo-da-velha" target="_blank" button type="button"
+            class="btn btn-outline-warning"></button>
+            <i class="bi bi-github"></i> GitHub
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card m-4" style="width: 20rem;">
+
+        <img src="imagem/Serenatto.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Site-Serenatto</h5>
+          <p class="card-text">Landing page responsiva para cafeteria fictícia. Criada com Bootstrap 5, Google Fonts e boas práticas de design.</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="https://simoneluciano.github.io/site-serenatto" target="_blank" button type="button"
+            class="btn btn-outline-success"></button>
+            <i class="bi bi-box-arrow-up-right"></i> Ver Projeto
+          </a>
+          <a href="https://github.com/simoneluciano/site-serenatto/deployments/github-pages" target="_blank" button
+            type="button" class="btn btn-outline-warning"></button>
+            <i class="bi bi-github"></i> GitHub
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card m-4" style="width: 20rem;">
+
+        <img src="imagem/formulario.png" class="card-img-top" alt="Formulário Responsivo">
+        <div class="card-body">
+          <h5 class="card-title">Formulário Responsivo</h5>
+          <p class="card-text">Formulário com campos validados, layout limpo e responsivo. Desenvolvido com HTML, CSS e Bootstrap 5.</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="https://simoneluciano.github.io/form/" target="blank" button type="button"
+            class="btn btn-outline-success"></button>
+            <i class="bi bi-box-arrow-up-right"></i> Ver Projeto
+          </a>
+          <a href="https://github.com/simoneluciano/formulario" target="blank" button type="button"
+            class="btn btn-outline-warning"></button>
+            <i class="bi bi-github"></i> GitHub
+          </a>
+        </div>
+
+      </div>
+      <!-- Card 4 -->
+      <div class="card m-4" style="width: 20rem;">
+
+        <img src="imagem/lista-de-tarefas-react.png" class="card-img-top" alt="React Responsivo">
+        <div class="card-body">
+          <h5 class="card-title">Lista de tarefas-React </h5>
+          <p class="card-text">Aplicação criada com React para gerenciamento de tarefas. Permite adicionar, remover e ordenar tarefas dinamicamente.</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="https://simoneluciano.github.io/meu-primeiro-react/" target="blank" button type="button"
+            class="btn btn-outline-success"></button>
+            <i class="bi bi-box-arrow-up-right"></i> Ver Projeto
+          </a>
+          <a href="https://github.com/simoneluciano/meu-primeiro-react" target="blank" button type="button"
+            class="btn btn-outline-warning"></button>
+            <i class="bi bi-github"></i> GitHub
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+<section id="contato" class="container my-5">
+  <h2 class="text-center mb-4">Fale comigo 💬</h2>
+
+  <div class="d-flex justify-content-center gap-4">
+    <!-- Email -->
+    <a href="mailto:simoneluciano420@gmail.com">
+      <img src="imagem/carta.jpg" alt="Enviar e-mail" class="img-carta">
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/32999379557" target="_blank">
+      <img src="imagem/imagem-do-whatsapp.jpg" alt="Chamar no WhatsApp" class="img-carta">
+    </a>
+  </div>
+</section>
+
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="server.js"></script>
+</body>
+
+</html>

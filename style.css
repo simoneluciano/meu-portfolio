@@ -1,0 +1,164 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Cores principais */
+:root {
+  --fundo-claro: #DAEBC4;
+  --texto-claro: #1e201d;
+  --destaque-laranja: #FF7F00;
+  --destaque-marrom: #4E3E10;
+  --titulo: #cc8e2a;
+  --borda-card: #4E3E10;
+
+  /* Fundo escuro */
+  --fundo-escuro: #121212;
+  --texto-dark: #9BE43D;
+  --card-dark: #1a1a1a;
+  --footer-dark: #1e1e1e;
+  --borda-dourada: #D4AF37;
+}
+
+/* ------------------------- */
+/* Modo Claro */
+/* ------------------------- */
+body {
+  background-color: var(--fundo-claro);
+  color: var(--texto-claro);
+  font-family: "Barlow", sans-serif;
+}
+
+h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--titulo);
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+h2:hover {
+  transform: scale(1.05);
+  color: var(--destaque-laranja);
+}
+
+.minha-imagem {
+  width: 300px;
+  height: auto;
+  border: none;
+}
+
+/* Carrossel */
+.carrossel-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.carrossel {
+  display: inline-block;
+  animation: rolar 20s linear infinite;
+  cursor: pointer;
+}
+
+.carrossel span {
+  display: inline-block;
+  margin: 0 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #594303;
+  font-family: 'Playwrite DK Loopet', cursive;
+}
+
+/* Animação */
+@keyframes rolar {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  color: var(--texto-claro);
+  border: 2px solid var(--borda-card);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.card-footer {
+  background-color: #f9f9f9;
+}
+
+.img-carta {
+  width: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.img-carta:hover {
+  transform: scale(1.1);
+}
+
+/* ------------------------- */
+/* Modo Escuro */
+/* ------------------------- */
+[data-bs-theme="dark"] {
+  background-color: var(--fundo-escuro)!important;
+  color: var(--texto-dark)!important;
+}
+
+[data-bs-theme="dark"] h1,
+
+[data-bs-theme="dark"] p,
+[data-bs-theme="dark"] a,
+[data-bs-theme="dark"] .card-title,
+[data-bs-theme="dark"] .card-text,
+[data-bs-theme="dark"] .form-check-label {
+  color: var(--texto-dark) !important;
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: var(--card-dark);
+  border: 2px solid var(--borda-dourada);
+}
+
+[data-bs-theme="dark"] .card-footer {
+  background-color: var(--footer-dark);
+}
+
+[data-bs-theme="dark"] .navbar {
+  background-color: #1a1a1a !important;
+  border-bottom: 1px solid #333;
+}
+[data-bs-theme="dark"] h2 {
+  color: #eccf13; /* exemplo: dourado mais claro */
+}
+[data-bs-theme="dark"] .carrossel span {
+  color: #d6bf2b; /* exemplo: dourado mais claro */
+}
+/* Banner */
+.banners-titulo {
+  background-image: url('imagem/banner-titulo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-sobre-imagem {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
